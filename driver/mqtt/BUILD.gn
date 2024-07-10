@@ -1,0 +1,16 @@
+static_library("bsp_mqtt") {
+    sources = [
+        "hal_bsp_mqtt.c"
+    ]
+
+    include_dirs = [
+        ".",
+        "//device/soc/hisilicon/hi3861v100/sdk_liteos/include",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/kal/cmsis",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src",
+        "//third_party/cJSON"
+    ]
+}
